@@ -1,0 +1,10 @@
+site_name: Documentação
+nav:
+  - Inicio: "index.md"
+  - Sobre: "about.md"
+  - GLPI: "glpi.md"
+  - Mkdocs: "mkdocs.md"
+  - Conclusao: "conclusao.md"
+
+theme:
+  name: material
