@@ -1,0 +1,862 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../about/">
+      
+      
+        <link rel="next" href="../mkdocs/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.27">
+    
+    
+      
+        <title>GLPI - Documentação</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6543a935.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#glpi" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Documentação" class="md-header__button md-logo" aria-label="Documentação" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Documentação
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              GLPI
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Documentação" class="md-nav__button md-logo" aria-label="Documentação" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Documentação
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Inicio
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sobre
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    GLPI
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    GLPI
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#processo-de-instalacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Processo de instalação
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Processo de instalação">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#primeiro-passo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Primeiro Passo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#distribuicao-linux" class="md-nav__link">
+    <span class="md-ellipsis">
+      Distribuição Linux
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instalar-dependencias-no-wsl" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalar Dependências no WSL
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Instalar Dependências no WSL">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#segundo-passo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Segundo Passo
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configure-o-mariadb" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configure o MariaDB
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configure o MariaDB">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#terceiro-passo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Terceiro Passo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crie-o-banco-de-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Crie o Banco de Dados
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#baixar-e-configurar-o-glpi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Baixar e configurar o GLPI
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Baixar e configurar o GLPI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#quarto-passo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quarto Passo
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configurar-o-apache" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configurar o Apache
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quinto-passo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quinto Passo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concluir-a-instalacao-do-glpi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Concluir a instalação do GLPI
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Concluir a instalação do GLPI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sexto-passo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sexto Passo
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#finalizar-e-acessar-o-glpi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Finalizar e acessar o GLPI
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Finalizar e acessar o GLPI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setimo-passo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setimo Passo
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mkdocs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mkdocs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../conclusao/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Conclusao
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#processo-de-instalacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Processo de instalação
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Processo de instalação">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#primeiro-passo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Primeiro Passo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#distribuicao-linux" class="md-nav__link">
+    <span class="md-ellipsis">
+      Distribuição Linux
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instalar-dependencias-no-wsl" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalar Dependências no WSL
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Instalar Dependências no WSL">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#segundo-passo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Segundo Passo
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configure-o-mariadb" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configure o MariaDB
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configure o MariaDB">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#terceiro-passo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Terceiro Passo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crie-o-banco-de-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Crie o Banco de Dados
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#baixar-e-configurar-o-glpi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Baixar e configurar o GLPI
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Baixar e configurar o GLPI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#quarto-passo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quarto Passo
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configurar-o-apache" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configurar o Apache
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quinto-passo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quinto Passo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concluir-a-instalacao-do-glpi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Concluir a instalação do GLPI
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Concluir a instalação do GLPI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sexto-passo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sexto Passo
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#finalizar-e-acessar-o-glpi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Finalizar e acessar o GLPI
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Finalizar e acessar o GLPI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setimo-passo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setimo Passo
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="glpi">GLPI</h1>
+<p><strong>INSTALAÇÃO DO GLPI</strong></p>
+<p>O GLPI é um sistema de gerenciamento de TI, que pode ser usado para adicionar ativos, chamados e etc. Existem três
+maneiras de instala-lo, sendo elas:</p>
+<p>•<strong>XAMPP</strong>, uma distribuição do Apache.</p>
+<p>•<strong>WSL</strong>, um subsistema linux.</p>
+<p>•<strong>VirtualBox</strong>, VM que representa virtualmente um computador fisico.</p>
+<h2 id="processo-de-instalacao">Processo de instalação</h2>
+<h3 id="primeiro-passo">Primeiro Passo</h3>
+<p>Eu optei por utilizar o <strong>WSL</strong>, que pode ser instalado pelo próprio terminal powershell do windows como administrador
+com o comando 'wsl --install'.</p>
+<p>Caso já tenha o wsl instalado, confirme se esta atualizado com o seguinte comando 'wsl --update'.</p>
+<h3 id="distribuicao-linux">Distribuição Linux</h3>
+<p>Você deve escolher qual distribuição irá utilizar, você pode instalar a distribuição Ubuntu, por exemplo, diretamente da Microsoft Store. Abra a Microsoft Store, procure por "Ubuntu" e instale.</p>
+<h2 id="instalar-dependencias-no-wsl">Instalar Dependências no WSL</h2>
+<h3 id="segundo-passo">Segundo Passo</h3>
+<p>Atualize os pacotes do sistema com 'sudo apt update &amp;&amp; sudo apt upgrade -y'</p>
+<p>em seguida instale o Apache, MariaDB e PHP com 'sudo apt install apache2 mariadb-server php libapache2-mod-php php-mysql php-xml php-mbstring php-curl php-cli php-gd php-imap php-ldap php-apcu php-intl php-zip wget unzip -y'</p>
+<h2 id="configure-o-mariadb">Configure o MariaDB</h2>
+<h3 id="terceiro-passo">Terceiro Passo</h3>
+<p>Inicie o MariaDB e configure a senha do root:</p>
+<p>'sudo service mysql start
+sudo mysql_secure_installation'</p>
+<p>Siga as instruções para definir uma senha para o usuário root e melhorar a segurança.</p>
+<h3 id="crie-o-banco-de-dados">Crie o Banco de Dados</h3>
+<p>Crie o banco de dados e usuário para o GLPI:</p>
+<p>'sudo mysql -u root -p'</p>
+<p>No Promp do MariaDB, execute:</p>
+<p>'CREATE DATABASE glpi;
+CREATE USER 'glpiuser'@'localhost' IDENTIFIED BY 'senha_secreta';
+GRANT ALL PRIVILEGES ON glpi.* TO 'glpiuser'@'localhost';
+FLUSH PRIVILEGES;
+EXIT;'</p>
+<h2 id="baixar-e-configurar-o-glpi">Baixar e configurar o GLPI</h2>
+<h3 id="quarto-passo">Quarto Passo</h3>
+<p>Baixe o GLPI:</p>
+<p>'cd /tmp
+wget https://github.com/glpi-project/glpi/releases/download/10.0.7/glpi-10.0.7.tgz'</p>
+<p>extraia e mova os arquivos:</p>
+<p>'tar -xvzf glpi-10.0.7.tgz
+sudo mv glpi /var/www/html/
+sudo chown -R www-data:www-data /var/www/html/glpi
+sudo chmod -R 755 /var/www/html/glpi'</p>
+<h2 id="configurar-o-apache">Configurar o Apache</h2>
+<h2 id="quinto-passo">Quinto Passo</h2>
+<p>Crie um novo arquivo de configuração para o GLPI:</p>
+<p>'sudo nano /etc/apache2/sites-available/glpi.conf'</p>
+<p>adicione o seguinte conteudo ao arquivo:</p>
+<p>'<VirtualHost \*:80>
+ServerAdmin admin@example.com
+DocumentRoot /var/www/html/glpi
+ServerName glpi.example.com</p>
+<pre><code>&lt;Directory /var/www/html/glpi&gt;
+    Options FollowSymLinks
+    AllowOverride All
+    Require all granted
+&lt;/Directory&gt;
+
+ErrorLog ${APACHE_LOG_DIR}/glpi_error.log
+CustomLog ${APACHE_LOG_DIR}/glpi_access.log combined
+</code></pre>
+<p></VirtualHost>'</p>
+<p>Habilitar a configuração e o módulo de reescrita do Apache:</p>
+<p>'sudo a2ensite glpi.conf
+sudo a2enmod rewrite
+sudo systemctl restart apache2'</p>
+<h2 id="concluir-a-instalacao-do-glpi">Concluir a instalação do GLPI</h2>
+<h3 id="sexto-passo">Sexto Passo</h3>
+<p>Acesse a interface web:</p>
+<p>Abra seu navegador e vá para http://localhost/glpi ou o nome do servidor configurado (glpi.example.com).</p>
+<p>Seguir o assistente de instalação:</p>
+<p>Siga os passos fornecidos pela interface web do GLPI para completar a instalação. Use o banco de dados glpi, o usuário glpiuser, e a senha que você configurou anteriormente.</p>
+<h2 id="finalizar-e-acessar-o-glpi">Finalizar e acessar o GLPI</h2>
+<h3 id="setimo-passo">Setimo Passo</h3>
+<p>Acessar o GLPI:</p>
+<p>Após completar a instalação, você pode acessar o GLPI através do endereço configurado. Os detalhes de login padrão são:
+Usuário: glpi
+Senha: glpi</p>
+<p>Segurança:</p>
+<p>Não se esqueça de mudar a senha dos usuários padrão e ajustar as permissões conforme necessário para garantir a segurança do sistema.</p>
+<p><strong>Seguindo esses passos, você terá o GLPI instalado e funcionando no WSL, pronto para ajudar na gestão dos serviços de TI da sua organização.</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.ad660dcc.min.js"></script>
+      
+    
+  </body>
+</html>
